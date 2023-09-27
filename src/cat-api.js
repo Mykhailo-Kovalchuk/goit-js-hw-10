@@ -41,7 +41,7 @@ export async function fetchCatByBreed(breedId) {
         const response = await axios.get(
             `${BASE_URL}?breed_ids=${breedId}`
         );
-        return response.data[0];
+        return response.data;
     } catch (error) {
 throw error;
     }
